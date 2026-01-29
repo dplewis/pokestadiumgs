@@ -4,6 +4,7 @@
 void func_83200020(void) {
 }
 
+#ifdef VERSION_US
 #pragma GLOBAL_ASM("asm/us/nonmatchings/fragments/5/fragment5_code/func_83200028.s")
 
 #pragma GLOBAL_ASM("asm/us/nonmatchings/fragments/5/fragment5_code/func_83200078.s")
@@ -23,3 +24,4 @@ void func_83200020(void) {
 #pragma GLOBAL_ASM("asm/us/nonmatchings/fragments/5/fragment5_code/func_83200A84.s")
 
 #pragma GLOBAL_ASM("asm/us/nonmatchings/fragments/5/fragment5_code/func_83200AC0.s")
+#endif

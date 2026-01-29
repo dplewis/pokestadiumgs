@@ -111,8 +111,10 @@ BUILD_DEFINES ?=
 
 ifeq ($(VERSION),us)
   BUILD_DEFINES   += -DVERSION_US=1
+else ifeq ($(VERSION),jp)
+  BUILD_DEFINES   += -DVERSION_JP=1
 else
-$(error Invalid VERSION variable detected. Please use 'us')
+$(error Invalid VERSION variable detected. Please use 'us' or 'jp')
 endif
 
 
@@ -284,6 +286,7 @@ DECOMP_POKESTADIUMGS_FILTERED := $(patsubst %.c,%.o,$(addprefix build/,$(shell f
 # only run asm processor on files that need it.
 $(DECOMP_POKESTADIUMGS_FILTERED): CC := $(ASM_PROC) $(ASM_PROC_FLAGS) $(CC) -- $(AS) $(ASFLAGS) --
 
+
 rom: $(ROM)
 	@$(PRINT) "$(RED)Building ROM...\n$(NO_COL)"
 ifneq ($(COMPARE),0)
@@ -327,7 +330,7 @@ extract:
 	$(V)$(RM) -r asm/$(VERSION) assets/$(VERSION)
 	$(V)$(CAT) yamls/$(VERSION)/header.yaml yamls/$(VERSION)/rom.yaml > $(SPLAT_YAML)
 	$(V)$(SPLAT) $(SPLAT_FLAGS) $(SPLAT_YAML)
-	$(V)$(EXTRACT_ASSETS)
+# 	$(V)$(EXTRACT_ASSETS)
 
 lib: $(ULTRALIB_LIB)
 

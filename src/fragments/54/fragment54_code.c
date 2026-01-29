@@ -1,6 +1,7 @@
 #include "global.h"
 
 
+#ifdef VERSION_US
 #pragma GLOBAL_ASM("asm/us/nonmatchings/fragments/54/fragment54_code/func_86600020.s")
 
 #pragma GLOBAL_ASM("asm/us/nonmatchings/fragments/54/fragment54_code/func_86600160.s")
@@ -49,9 +50,11 @@
 
 #pragma GLOBAL_ASM("asm/us/nonmatchings/fragments/54/fragment54_code/func_86602828.s")
 
+#endif
 void func_86603100(void) {
 }
 
+#ifdef VERSION_US
 #pragma GLOBAL_ASM("asm/us/nonmatchings/fragments/54/fragment54_code/func_86603108.s")
 
 #pragma GLOBAL_ASM("asm/us/nonmatchings/fragments/54/fragment54_code/func_86603604.s")
@@ -89,3 +92,4 @@ void func_86603100(void) {
 #pragma GLOBAL_ASM("asm/us/nonmatchings/fragments/54/fragment54_code/func_866061E0.s")
 
 #pragma GLOBAL_ASM("asm/us/nonmatchings/fragments/54/fragment54_code/func_86606388.s")
+#endif

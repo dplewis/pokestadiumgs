@@ -4,6 +4,7 @@
 void func_8F700020(void) {
 }
 
+#ifdef VERSION_US
 #pragma GLOBAL_ASM("asm/us/nonmatchings/fragments/76/fragment76_code/func_8F700028.s")
 
 #pragma GLOBAL_ASM("asm/us/nonmatchings/fragments/76/fragment76_code/func_8F700420.s")
@@ -47,3 +48,4 @@ void func_8F700020(void) {
 #pragma GLOBAL_ASM("asm/us/nonmatchings/fragments/76/fragment76_code/func_8F701224.s")
 
 #pragma GLOBAL_ASM("asm/us/nonmatchings/fragments/76/fragment76_code/func_8F701280.s")
+#endif

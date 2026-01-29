@@ -1,6 +1,7 @@
 #include "global.h"
 
 
+#ifdef VERSION_US
 #pragma GLOBAL_ASM("asm/us/nonmatchings/CE80/func_8000C280.s")
 
 #pragma GLOBAL_ASM("asm/us/nonmatchings/CE80/func_8000C614.s")
@@ -49,14 +50,18 @@
 
 #pragma GLOBAL_ASM("asm/us/nonmatchings/CE80/func_8000D98C.s")
 
+#endif
 void func_8000D9C0(void) {
 }
 
+#ifdef VERSION_US
 #pragma GLOBAL_ASM("asm/us/nonmatchings/CE80/func_8000D9C8.s")
 
+#endif
 void func_8000D9F0(void) {
 }
 
+#ifdef VERSION_US
 #pragma GLOBAL_ASM("asm/us/nonmatchings/CE80/func_8000D9F8.s")
 
 #pragma GLOBAL_ASM("asm/us/nonmatchings/CE80/func_8000DA14.s")
@@ -83,9 +88,11 @@ void func_8000D9F0(void) {
 
 #pragma GLOBAL_ASM("asm/us/nonmatchings/CE80/func_8000DE34.s")
 
+#endif
 void func_8000DEA0(void) {
 }
 
+#ifdef VERSION_US
 #pragma GLOBAL_ASM("asm/us/nonmatchings/CE80/func_8000DEA8.s")
 
 #pragma GLOBAL_ASM("asm/us/nonmatchings/CE80/func_8000DEE8.s")
@@ -105,3 +112,4 @@ void func_8000DEA0(void) {
 #pragma GLOBAL_ASM("asm/us/nonmatchings/CE80/func_8000F834.s")
 
 #pragma GLOBAL_ASM("asm/us/nonmatchings/CE80/func_8000FCF0.s")
+#endif
