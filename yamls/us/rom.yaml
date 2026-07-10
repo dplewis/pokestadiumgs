@@ -347,7 +347,7 @@
     
     # .bss
     - {vram: 0x800A7E80, type:  .bss, name: main}
-    - {vram: 0x800AAA00, type:  bss, name: unk_bss}
+    - {vram: 0x800AA9E0, type:  bss, name: unk_bss1}
     - {vram: 0x800AB3C0, type:  bss, name: unk_bss2}
 
     # ultralib

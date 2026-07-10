@@ -66,6 +66,8 @@ SECTIONS
         build/src/21C0.o(.text);
         build/asm/jp/exception_set.o(.text);
         build/src/C1E0.o(.text);
+        build/src/game_thread.o(.text);
+        build/src/66870.o(.text);
         build/lib/libultra.a:sendmesg.o(.text);
         build/lib/libultra.a:stopthread.o(.text);
         build/lib/libultra.a:recvmesg.o(.text);
@@ -264,6 +266,10 @@ SECTIONS
         build/asm/jp/exception_set.o(.data);
         C1E0 = .;
         build/src/C1E0.o(.data);
+        game_thread = .;
+        build/src/game_thread.o(.data);
+        _66870 = .;
+        build/src/66870.o(.data);
         _87680_data = .;
         build/asm/jp/data/87680.data.o(.data);
         build/lib/libultra.a:exceptasm.o(.data);
@@ -310,6 +316,9 @@ SECTIONS
         build/asm/jp/exception_set.o(.rodata);
         build/src/C1E0.o(.rodata);
         build/asm/jp/data/A3C30.rodata.o(.rodata);
+        build/src/game_thread.o(.rodata);
+        build/src/66870.o(.rodata);
+        build/asm/jp/data/A7830.rodata.o(.rodata);
         build/lib/libultra.a:setintmask.o(.rodata);
         build/lib/libultra.a:sinf.o(.rodata);
         build/lib/libultra.a:exceptasm.o(.rodata);
@@ -341,7 +350,9 @@ SECTIONS
         build/src/21C0.o(.bss);
         build/asm/jp/exception_set.o(.bss);
         build/src/C1E0.o(.bss);
-        build/asm/jp/data/unk_bss.bss.o(.bss);
+        build/src/game_thread.o(.bss);
+        build/src/66870.o(.bss);
+        build/asm/jp/data/unk_bss1.bss.o(.bss);
         build/asm/jp/data/unk_bss2.bss.o(.bss);
         build/lib/libultra.a:sptask.o(.bss);
         build/lib/libultra.a:controller.o(.bss);

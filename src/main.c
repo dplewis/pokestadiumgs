@@ -6,7 +6,7 @@ OSThread gIdleThread;
 u8 main_unk_bss1[0x400];
 OSThread pThreads;
 u8 main_unk_bss2[0x2000];
-LEODiskID leoDiskID;
+extern RenderContext gRenderContext;
 
 void Vi_SelectMode(s8, s8);
 void Thread5_CreateThread();
@@ -29,7 +29,7 @@ void Idle_ThreadEntry(UNUSED void* unused) {
     Thread4_CreateThread();
     Thread5_CreateThread();
     SoftReset_CreateThread();
-    osCreateThread(&pThreads, 6, Game_Thread, NULL, &leoDiskID, 0x14);
+    osCreateThread(&pThreads, 6, Game_Thread, NULL, &gRenderContext, 0x14);
     osStartThread(&pThreads);
     osSetThreadPri(NULL, 0);
 

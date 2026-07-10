@@ -58,7 +58,7 @@ PYTHON ?= $(VENV)/$(VENV_BIN_DIR)/python3
 N64_EMULATOR ?=
 # Set prefix to mips binutils binaries (mips-linux-gnu-ld => 'mips-linux-gnu-') - Change at your own risk!
 # In nearly all cases, not having 'mips-linux-gnu-*' binaries on the PATH is indicative of missing dependencies
-MIPS_BINUTILS_PREFIX ?= mips-linux-gnu-
+MIPS_BINUTILS_PREFIX ?= mips-elf-
 PRINT = printf
 
 # Whether to hide commands or not

@@ -24,6 +24,8 @@
     - [0x21C0, c]
     - [0xC1C0, asm, exception_set]
     - [0xC1E0, c]
+    - [0x66280, c, game_thread]
+    - [0x66870, c]
     - [0x75FA0, lib, libultra, sendmesg]
     - [0x760F0, lib, libultra, stopthread]
     - [0x761B0, lib, libultra, recvmesg]
@@ -245,6 +247,8 @@
     - [0xA3C10, lib, libultra, vimgr, .data]
 
     - [0xA3C30, rodata]
+    - [0xA77E0, .rodata, game_thread]
+    - [0xA7830, rodata]
     - [0xA7FC0, lib, libultra, setintmask, .rodata]
     - [0xA8068, lib, libultra, sinf, .rodata]
     - [0xA8090, lib, libultra, exceptasm, .rodata]
@@ -265,7 +269,7 @@
     - [0xAA1E0]
 
     - {vram: 0x800A95E0, type:  .bss, name: main}
-    - {vram: 0x800AC160, type:  bss, name: unk_bss}
+    - {vram: 0x800AC140, type:  bss, name: unk_bss1}
     - {vram: 0x800ACB20, type:  bss, name: unk_bss2}
 
     # ultralib

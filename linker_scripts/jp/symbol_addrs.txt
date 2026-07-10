@@ -1,7 +1,7 @@
 entry_bss = 0x800A95E0; // size:0x400
 gIdleThread = 0x800A99E0; // size:0x1B0
 pThreads = 0x800A9F90; // size:0x1B0
-leoDiskID = 0x800AC140; // size:0x20
+gRenderContext = 0x800AC140; // size:0x9E0
 D_80091B0C = 0x80091B0C;
 D_80092564 = 0x80092564;
 D_8009900C = 0x8009900C;
