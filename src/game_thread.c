@@ -3,30 +3,27 @@
 #ifdef VERSION_JP
 #include "lib/ultralib/include/PR/os_internal_reg.h"
 
-void func_80002B34(s32);
-void func_800063C0();
-void func_80035040(s32);
-void func_80035520();
-void func_80041A84();
-void func_80046880();
-void func_8004BE70();
-void func_8006EA40();
-
-void func_80002BE8(s32);
-void func_8004B530();
-void func_80050A40();
-void func_8005B11C();
-
 void func_80001E0C(s32);
 void func_80001F54(s32);
 void func_80002014();
+void func_80002B34(s32);
+void func_80002BE8(s32);
+void func_800063C0();
+void func_80035040(s32);
 void func_800352BC();
+void func_80035520();
+void func_80041A84();
+void func_80046880();
+void func_80049D20();
+void func_8004B530();
+void func_8004BE70();
+void func_80050A40();
 void func_80056968();
-void func_80065854();
-
+void func_8005B11C();
 void func_80005EC0();
 void func_80005EEC();
-void func_80049D20();
+void func_80065854();
+void func_8006EA40();
 
 extern s32 D_8009F670;
 extern s32 D_8009F674;
